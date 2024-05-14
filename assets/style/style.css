@@ -70,14 +70,16 @@ nav li {
 nav {
   background-color: #00a2c6;
   padding: 5px;
+  position: sticky;
+  top: 0;
 }
 
 main {
-    padding: 20px;
-    overflow: auto;
+  padding: 20px;
+  overflow: auto;
 }
 
-#content{
+#content {
   float: left;
   width: 75%;
 }
@@ -88,8 +90,13 @@ aside {
   padding-left: 20px;
 }
 
-@media screen and (max-width:1000px) {
-  #content, aside{
+header {
+  display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
     width: 100%;
     padding: 0;
   }
